@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Tooling
+.pytest_cache/
+.DS_Store
+
+# Earth Engine credentials - NEVER commit these
+.config/earthengine/
+*credentials*.json
+*.pem
+
+# data/gee_samples*.csv are the frozen real-data inputs (~6 MB each): keep them
+# in the repo so every real-data number reproduces without Earth Engine.

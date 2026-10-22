@@ -1,0 +1,39 @@
+{
+  "label": "gee",
+  "synthetic": false,
+  "samples": "data/gee_samples.csv",
+  "regions": [
+    "sierra_conifer",
+    "coastal_chaparral"
+  ],
+  "models": [
+    "linear",
+    "rf",
+    "xgb"
+  ],
+  "seed": 0,
+  "block_km": 13.0,
+  "buffer_km": 1.0,
+  "alpha": 0.1,
+  "repeats": 10,
+  "fast": false,
+  "n_raw": 16000,
+  "n_screened": 16000,
+  "n_by_region": {
+    "coastal_chaparral": 8000,
+    "sierra_conifer": 8000
+  },
+  "variogram_range_km": {
+    "coastal_chaparral": 12.75,
+    "sierra_conifer": 6.75
+  },
+  "utc": "2026-10-22T15:38:50+00:00",
+  "python": "3.13.5",
+  "runtime_s": 63.0,
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1",
+    "xgboost": "3.4.1"
+  }
+}

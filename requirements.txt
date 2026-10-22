@@ -1,0 +1,14 @@
+# Core (synthetic pipeline + modelling + validation + plots)
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+scikit-learn>=1.3
+xgboost>=2.0          # multi-quantile objective (reg:quantileerror) needs >= 2.0
+matplotlib>=3.7
+
+# Tests
+pytest>=7.0
+
+# Real-data backend (Google Earth Engine). Optional: only needed for
+# scripts/fetch_gee.py. After install, run `earthengine authenticate` once.
+earthengine-api>=0.1.380
